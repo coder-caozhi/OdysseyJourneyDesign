@@ -7,9 +7,11 @@
     <groupId>org.george</groupId>
     <artifactId>OdysseyJourney</artifactId>
     <version>1.0-SNAPSHOT</version>
+    <packaging>pom</packaging>
 
     <modules>
         <module>gist</module>
+        <module>api</module>
     </modules>
 
     <build>
