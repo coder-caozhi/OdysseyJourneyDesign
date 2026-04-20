@@ -1,5 +1,11 @@
 package org.george.enumAndConstant;
 
+import java.util.Arrays;
+import java.util.Map;
+import java.util.Objects;
+import java.util.function.Function;
+import java.util.stream.Collectors;
+
 public enum HttpStatus {
     // 定义常量时传入参数，调用构造器
     OK(200, "OK"),
@@ -26,11 +32,25 @@ public enum HttpStatus {
         return message;
     }
 
+    private static final Map<Integer, HttpStatus> CODE_MAP;
+
+    static {
+        CODE_MAP = Arrays.stream(HttpStatus.values())
+                .filter(Objects::nonNull)
+                .collect(Collectors.toMap(
+                        HttpStatus::getCode,
+                        Function.identity(),
+                        (existing, newer) -> existing
+                ));
+    }
+
     // 也可以设置通用方法 通常是通过一个属性得到另外一个属性
     //TODO:结合枚举类型自带方法，通过Map方式获取最佳时间复杂度
-    public void printInfo() {
-        System.out.println(code + message);
+    public HttpStatus printInfo(Integer code) {
+        return CODE_MAP.get(code);
     }
+
+
 
     // 编译器会为每个枚举类型自动添加一些有用的方法。
     // 1. 根据常量值获取实例

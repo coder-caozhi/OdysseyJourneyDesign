@@ -5,7 +5,8 @@ package org.george.enumAndConstant;
  */
 public interface OrderStatus {
 
-    //TODO：接口里面定义枚举类
+    //DONE：接口里面定义枚举类，枚举里面提供一定的行为
+    // 接口里面内嵌接口重要是为了语义的分组，清晰
     /**
      * 订单状态枚举（放在接口内部，语义高度收敛）
      */
