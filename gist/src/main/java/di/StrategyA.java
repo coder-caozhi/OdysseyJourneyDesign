@@ -1,4 +1,4 @@
-package cache.di;
+package di;
 
 import org.springframework.stereotype.Component;
 

@@ -1,4 +1,4 @@
-package cache.di;
+package di;
 
 public interface MyStrategy {
     /**
