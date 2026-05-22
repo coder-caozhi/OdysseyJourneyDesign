@@ -20,7 +20,7 @@
     <modules>
         <module>gist</module>
         <module>api</module>
-        <module>AIGC</module>
+        <module>Interf</module>
         <module>Caffeine</module>
         <module>Repeat</module>
     </modules>
