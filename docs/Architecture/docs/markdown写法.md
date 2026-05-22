@@ -102,9 +102,11 @@ System.out.println("Markdown 语法示例");
 
 
 # Python 代码示例
+```python
 def markdown_demo():
 print("Markdown 常用语法")
 return True
+```
 
 
 六、链接与图片语法
