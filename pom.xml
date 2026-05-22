@@ -21,6 +21,8 @@
         <module>gist</module>
         <module>api</module>
         <module>AIGC</module>
+        <module>Caffeine</module>
+        <module>Repeat</module>
     </modules>
 
     <dependencies>
@@ -58,6 +60,11 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+        <!-- springboot-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
         </dependency>
     </dependencies>
 
