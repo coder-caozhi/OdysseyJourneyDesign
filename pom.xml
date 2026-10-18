@@ -21,7 +21,6 @@
         <module>gist</module>
         <module>api</module>
         <module>Interf</module>
-        <module>Caffeine</module>
         <module>Repeat</module>
     </modules>
 
